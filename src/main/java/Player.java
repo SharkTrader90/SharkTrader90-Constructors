@@ -1,3 +1,4 @@
+// import com.azul.crs.util.logging.Logger.Level;
 
 /**
  * This class contains two constructors, but currently the constructors have no behavior,
@@ -19,7 +20,7 @@ public class Player {
 
     /**
      * this.playerName should be set to playerName.
-     *
+     *‹‹£3‹
      * Constructor should assign the object's playerName using this.playerName to refer to the playerName at the top of
      * the class rather than the playerName in the parameter of this method (as they are both the exact same name).
      *      this.playerName = playerName;
@@ -31,9 +32,10 @@ public class Player {
      * @param playerName the name of the player to be created.
      */
     public Player(String playerName){
+        this.playerName = playerName;
+        this.level = 1;
 
     }
-
     /**
      * Again, the values of this object should be set with the help of the 'this' keyword to avoid confusion between
      * class fields / parameter variables.
@@ -48,7 +50,8 @@ public class Player {
      * @param level the starting level of the player to be created.
      */
     public Player(String playerName, int level){
-
+        this.playerName = playerName;
+        this.level = level;
     }
 
 }
